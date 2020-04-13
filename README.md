@@ -69,9 +69,6 @@ From JDK 9 and above:
 -Xlog:gc*:file={file-path}
 
 Example:
-1
-2
-3
 	
 -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/opt/workspace/myAppgc.log
  
@@ -91,6 +88,9 @@ In ‘-XX:HeapDumpPath’, you need to specify the file path where heap dump sho
 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/crashes/my-heap-dump.hprof
 
 Once heap dumps are captured, you can use tools like HeapHero, EclipseMAT to analyze heap dumps.
+
+Out of memory related settings:
+https://blog.heaphero.io/2019/06/21/outofmemoryerror-related-jvm-arguments/
 
 5. -Xss
 
